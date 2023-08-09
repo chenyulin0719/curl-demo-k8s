@@ -1,8 +1,8 @@
 ## Kubernates YAML explanation
-1. Create a `Role` named `list-pods-role` within the `default` namespace. Grant it permission of get/list pods. 
-2. Create a `ServiceAccount` named `list-pods-sa` within the `default` namespace.
-3. Create a `RoleBinding` named `list-pods-role-binding` within the `default` namespace.  Associate the `list-pods-role` with the ServiceAccount `list-pods-sa`.
-4. Create a `Pod` named `curl-pod` with image `curlimages/curl` within `default` namespace and attach service account `list-pods-sa`. 
+1. Create a `Role` named __list-pods-role__ within the `default` namespace. Grant it permission of get/list pods. 
+2. Create a `ServiceAccount` named __list-pods-sa__ within the `default` namespace.
+3. Create a `RoleBinding` named __list-pods-role-binding__ within the `default` namespace.  Associate the __list-pods-role__ with the ServiceAccount __list-pods-sa__.
+4. Create a `Pod` named __curl-pod__ with image `curlimages/curl` within `default` namespace and attach service account __list-pods-sa__. 
 
 ### Demo
 1. kubectl apply -f curl-demo.yaml
